@@ -1,0 +1,270 @@
+class 1
+winSize=(32,32)
+blockSize=(32,32)
+blockStride=(4,4)
+cellSize=(4,4)
+nbins=7
+hog dimension:448
+
+k=2
+correct direct matching:5230
+found matchings using cycles:535
+correct matchings:420
+percentage:0.785046728972
+
+k=3
+correct direct matching:5650
+found matchings using cycles:1678
+correct matchings:1254
+percentage:0.747318235995
+
+k=4
+correct direct matching:5807
+found matchings using cycles:3374
+correct matchings:2363
+percentage:0.700355660937
+
+k=5
+correct direct matching:5893
+found matchings using cycles:5478
+correct matchings:3648
+percentage:0.665936473165
+
+k=6
+correct direct matching:5917
+found matchings using cycles:7936
+correct matchings:5083
+percentage:0.640498991935
+
+k=7
+correct direct matching:5940
+found matchings using cycles:10711
+correct matchings:6622
+percentage:0.618242927831
+
+
+
+
+
+
+k:3
+hog dimension:448
+=============== Direct ===============
+number of matchings:10000
+number of correct matchings:5230
+precision: 52.3
+=============== Cycle ===============
+found matchings using cycles:535
+correct matchings:420
+precision:78.5046728972
+recall:0.00840181647272
+
+k:4
+hog dimension:448
+=============== Direct ===============
+number of matchings:10000
+number of correct matchings:5650
+precision: 56.5
+=============== Cycle ===============
+found matchings using cycles:1678
+correct matchings:1254
+precision:74.7318235995
+recall:0.0250854234686
+
+k:5
+hog dimension:448
+=============== Direct ===============
+number of matchings:10000
+number of correct matchings:5807
+precision: 58.07
+=============== Cycle ===============
+found matchings using cycles:3374
+correct matchings:2363
+precision:70.0355660937
+recall:0.0472702198215
+
+k:6
+hog dimension:448
+=============== Direct ===============
+number of matchings:10000
+number of correct matchings:5893
+precision: 58.93
+=============== Cycle ===============
+found matchings using cycles:5478
+correct matchings:3648
+precision:66.5936473165
+recall:0.0729757773631
+
+k:7
+hog dimension:448
+=============== Direct ===============
+number of matchings:10000
+number of correct matchings:5917
+precision: 59.17
+=============== Cycle ===============
+found matchings using cycles:7936
+correct matchings:5083
+precision:64.0498991935
+recall:0.101681983645
+
+k:8
+hog dimension:448
+=============== Direct ===============
+number of matchings:10000
+number of correct matchings:5940
+precision: 59.4
+=============== Cycle ===============
+found matchings using cycles:10711
+correct matchings:6622
+precision:61.8242927831
+recall:0.13246863972
+
+k:9
+hog dimension:448
+=============== Direct ===============
+number of matchings:10000
+number of correct matchings:5943
+precision: 59.43
+=============== Cycle ===============
+found matchings using cycles:13774
+correct matchings:8196
+precision:59.5034122259
+recall:0.163955447168
+
+k:10
+hog dimension:448
+=============== Direct ===============
+number of matchings:10000
+number of correct matchings:5931
+precision: 59.31
+=============== Cycle ===============
+found matchings using cycles:17035
+correct matchings:9867
+precision:57.9219254476
+recall:0.197382674134
+
+k:11
+hog dimension:448
+=============== Direct ===============
+number of matchings:10000
+number of correct matchings:5900
+precision: 59.0
+=============== Cycle ===============
+found matchings using cycles:20515
+correct matchings:11578
+precision:56.4367535949
+recall:0.231610074098
+
+k:12
+hog dimension:448
+=============== Direct ===============
+number of matchings:10000
+number of correct matchings:5893
+precision: 58.93
+=============== Cycle ===============
+found matchings using cycles:24119
+correct matchings:13306
+precision:55.168124715
+recall:0.266177547586
+
+
+k:13
+hog dimension:448
+=============== Direct ===============
+number of matchings:10000
+number of correct matchings:5868
+precision: 58.68
+=============== Cycle ===============
+found matchings using cycles:27990
+correct matchings:15131
+precision:54.0585923544
+recall:0.302685440592
+
+k:14
+hog dimension:448
+=============== Direct ===============
+number of matchings:10000
+number of correct matchings:5844
+precision: 58.44
+=============== Cycle ===============
+found matchings using cycles:32048
+correct matchings:16926
+precision:52.8145282077
+recall:0.338593203851
+
+k:15
+hog dimension:448
+=============== Direct ===============
+number of matchings:10000
+number of correct matchings:5828
+precision: 58.28
+=============== Cycle ===============
+found matchings using cycles:36254
+correct matchings:18790
+precision:51.8287637226
+recall:0.37588126553
+
+
+k:20
+hog dimension:448
+=============== Direct ===============
+number of matchings:10000
+number of correct matchings:5734
+precision: 57.34
+=============== Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:59471
+correct matchings:28247
+precision:47.4970994266
+recall:0.56506216644
+ 
+start:1490966604.87 
+k:30 
+hog dimension:448 
+directMatching start:1490966608.96 
+=============== Direct =============== 
+number of matchings:10000 
+number of correct matchings:5595 
+precision: 55.95 
+findCycle start:1490966609.66 
+=============== Cycle =============== 
+allPositiveCnt:4998919 
+found matchings using cycles:114343 
+correct matchings:48303 
+precision:42.24395022 
+recall:0.966268907338 
+end:1490969895.69
+
+
+resultJson=\
+'['\
++'{"k":3,"precision":78.5046728972,"recall":0.00840181647272, "dCorrect": 5230},'\
++'{"k":4,"precision":74.7318235995,"recall":0.0250854234686, "dCorrect": 5650},'\
++'{"k":5,"precision":70.0355660937,"recall":0.0472702198215, "dCorrect": 5807},'\
++'{"k":6,"precision":66.5936473165,"recall":0.0729757773631, "dCorrect": 5893},'\
++'{"k":7,"precision":64.0498991935,"recall":0.101681983645, "dCorrect": 5917},'\
++'{"k":8,"precision":61.8242927831,"recall":0.13246863972, "dCorrect": 5940},'\
++'{"k":9,"precision":59.5034122259,"recall":0.163955447168, "dCorrect": 5943},'\
++'{"k":10,"precision":57.9219254476,"recall":0.197382674134, "dCorrect": 5931},'\
++'{"k":11,"precision":56.4367535949,"recall":0.231610074098, "dCorrect": 5900},'\
++'{"k":12,"precision":55.168124715,"recall":0.266177547586, "dCorrect": 5893},'\
++'{"k":13,"precision":54.0585923544,"recall":0.302685440592, "dCorrect": 5868},'\
++'{"k":14,"precision":52.8145282077,"recall":0.338593203851, "dCorrect": 5844},'\
++'{"k":15,"precision":51.8287637226,"recall":0.37588126553, "dCorrect": 5828},'\
++'{"k":20, "precision":47.4970994266, "recall":0.56506216644, "dCorrect":5734}'\
++'{"k":30, "precision":42.24395022, "recall":0.966268907338,"dCorrect":5595}'\
++']'
+
+Environment
+============== HOG ==============
+window size: (32,32)
+block size: (32,32)
+cell size: (4,4)
+number of bins: 7
+hog dimension: 448
+============== Image ==============
+Dataset: Cifar-10
+batch number: 1
+number of images: 10000
+cycle size: 4
+number of total positive matching count: 4998919
