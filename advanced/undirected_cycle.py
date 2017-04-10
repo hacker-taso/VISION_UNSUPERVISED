@@ -66,12 +66,9 @@ def findCycle(I, cycleSize):
 	def walk(firstNode, thisNode, path, numNode):
 		pathWithThis=path+[thisNode]
 		numNode+=1
-		if thisNode==firstNode:
-			if numNode==cycleSize:
-				return [pathWithThis]
-			else:
-				return []
-		if numNode==cycleSize:
+		if thisNode==firstNode and numNode == cycleSize:
+			return [pathWithThis]
+		if thisNode in pathWithThis[:-1] or numNode == cycleSize:
 			return []
 		pathL=[]
 		NNs=I[thisNode]
