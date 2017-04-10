@@ -76,9 +76,9 @@ def findCycle(I, cycleSize):
 	def walk(firstNode, thisNode, path, numNode):
 		pathWithThis=path+[thisNode]
 		numNode+=1
-		if thisNode==firstNode:
+		if thisNode==firstNode and numNode == cycleSize:
 			return [pathWithThis]
-		if numNode==cycleSize:
+		if thisNode in pathWithThis[:-1] or numNode == cycleSize:
 			return []
 		pathL=[]
 		NNs=I[thisNode]
@@ -94,7 +94,7 @@ def findCycle(I, cycleSize):
 				toNode=NNs[i]
 				pathL+=walk(fromNode, toNode, [fromNode], 1)
 		return pathL
-	return filter(lambda path: len(path)==4, findFromEach())
+	return filter(lambda path: len(path)==cycleSize, findFromEach())
 
 def getMatchingSFromCycles(cycles):
 	matchingsS=set()
