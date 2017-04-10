@@ -9,7 +9,7 @@ def unpickle(file):
     return dict
 
 def getHogs(batchNum, imgCnt):
-	batchDir = 'batch'+str(batchNum)
+	batchDir = '../batch'+str(batchNum)
 	imgPrefix = '.png'
 	#if cell size is  too small, then accuracy is all small
 	winSize=(32,32)
@@ -50,7 +50,7 @@ def getDirectMatching(imgCnt, numMatching, D, I):
 	return matchings
 
 def getLabels(batchNum):
-	batchFile = 'data_batch_'+str(batchNum)
+	batchFile = '../data_batch_'+str(batchNum)
 	batchInfo = unpickle(batchFile)
 	labels = batchInfo['labels']
 	return labels
@@ -67,13 +67,13 @@ def findCycle(I, cycleSize):
 	def walk(firstNode, thisNode, path, numNode):
 		pathWithThis=path+[thisNode]
 		numNode+=1
-		if thisNode==firstNode:
+		if thisNode==firstNode and numNode == cycleSize:
 			return [pathWithThis]
-		if numNode==cycleSize:
+		if thisNode in pathWithThis[:-1] or numNode == cycleSize:
 			return []
 		pathL=[]
 		NNs=I[thisNode]
-		for i in range(1, k):
+		for i in range(1, len(NNs)):
 			neighbor = NNs[i]
 			pathL+=walk(firstNode, neighbor, pathWithThis, numNode)
 		return pathL
@@ -81,11 +81,11 @@ def findCycle(I, cycleSize):
 		pathL=[]
 		for NNs in I:
 			fromNode = NNs[0]
-			for i in range(1, k):
+			for i in range(1, len(NNs)):
 				toNode=NNs[i]
 				pathL+=walk(fromNode, toNode, [fromNode], 1)
 		return pathL
-	return filter(lambda path: len(path)==4, findFromEach())
+	return filter(lambda path: len(path)==cycleSize, findFromEach())
 
 def getMatchingSFromCycles(cycles):
 	matchingsS=set()
