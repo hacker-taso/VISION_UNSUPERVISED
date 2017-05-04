@@ -1,0 +1,153 @@
+k:3
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:135
+correct matchings:93
+precision:68.8888888889
+recall:0.00186040221896
+
+k:4
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:935
+correct matchings:716
+precision:76.577540107
+recall:0.0143230966535
+
+k:5
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:2515
+correct matchings:1804
+precision:71.7296222664
+recall:0.0360878021828
+
+k:6
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:4655
+correct matchings:3199
+precision:68.7218045113
+recall:0.0639938354672
+
+k:7
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:7239
+correct matchings:4739
+precision:65.4648432104
+recall:0.0948004958672
+
+k:8
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:10156
+correct matchings:6312
+precision:62.1504529342
+recall:0.12626729899
+
+k:9
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:13376
+correct matchings:7973
+precision:59.6067583732
+recall:0.159494482707
+
+k:10
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:16893
+correct matchings:9715
+precision:57.5090274078
+recall:0.194342016744
+
+k:11
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:20655
+correct matchings:11547
+precision:55.9041394336
+recall:0.230989940025
+
+k:12
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:24440
+correct matchings:13285
+precision:54.3576104746
+recall:0.265757456762
+
+k:13
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:28418
+correct matchings:15040
+precision:52.9242029699
+recall:0.300865047023
+
+k:14
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:32378
+correct matchings:16678
+precision:51.5102847613
+recall:0.333632131267
+
+k:15
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:36523
+correct matchings:18439
+precision:50.4859951264
+recall:0.368859747477
+
+k:20
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:57178
+correct matchings:26357
+precision:46.0964007136
+recall:0.527253992313
+
+k:25
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:77707
+correct matchings:33576
+precision:43.2084625581
+recall:0.671665214019
+
+k:30
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:97544
+correct matchings:40300
+precision:41.3146887558
+recall:0.806174294883
+
+k:50
+hog dimension:448
+=============== Direct Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:170277
+correct matchings:62979
+precision:36.986204831
+recall:1.25985238008
+
