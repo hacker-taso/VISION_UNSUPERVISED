@@ -53,15 +53,15 @@ def floydwarshall(I, D):
 		for neighborIdx in range(1, len(I[u])):
 			dist[u][I[u][neighborIdx]] = D[u][neighborIdx]
 			pred[u][I[u][neighborIdx]] = u
-		for t in vs:
-			# given dist u to v, check if path u - t - v is shorter
-			for u in vs:
-				for v in vs:
-					newdist = dist[u][t] + dist[t][v]
-					if newdist < dist[u][v]:
-						dist[u][v] = newdist
-						pred[u][v] = pred[t][v] # route new path through t
-		return dist, pred
+	for t in vs:
+		# given dist u to v, check if path u - t - v is shorter
+		for u in vs:
+			for v in vs:
+				newdist = dist[u][t] + dist[t][v]
+				if newdist < dist[u][v]:
+					dist[u][v] = newdist
+					pred[u][v] = pred[t][v] # route new path through t
+	return dist, pred
 def processDist(dist):
 	processed = {}
 	#f: from, t: to
@@ -74,8 +74,15 @@ def processDist(dist):
 					processed[dist[f][t]] = [(f,t)]
 	return processed
 
+def calcTrueMatching(matchings, labels):
+	truthList=[0]*len(matchings)
+	for i in range(len(matchings)):
+		if labels[matchings[i][0]] != labels[matchings[i][1]]:
+			truthList[i] = 1
+	return truthList
 batchNum = 1
-imgCnt = 10000
+imgCnt = 1000
+numPairs = 50000
 import sys
 k=int(sys.argv[1])
 print 'k:'+str(k)
@@ -85,5 +92,22 @@ D, I = drawKnn(hogs, d, k)
 
 dist,pred=floydwarshall(I,D)
 processedDist=processDist(dist)
-total=reduce(lambda l,y: y+len(l),processedDist.values())
-print total
+flattened=[e for l in processedDist.values() for e in l]
+print 'total numPairs:'+str(len(flattened))
+sortedKeys=sorted(processedDist.keys(),reverse=True)
+rank=0
+pairs=[]
+for k in sortedKeys:
+	for pair in processedDist[k]:
+		pairs.append(pair)
+		rank+=1
+		if rank==numPairs:
+			break
+	if rank==numPairs:
+		break
+labels = getLabels(batchNum)
+cTruthList=calcTrueMatching(pairs, labels)
+trueNegativeCnt=cTruthList.count(1)
+print 'numPairs:'+str(numPairs)
+print 'trueNegativeCnt:'+str(trueNegativeCnt)
+print 'trueNegativeCnt/numPairs:', ((1.0)*trueNegativeCnt/numPairs)
