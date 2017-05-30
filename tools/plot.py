@@ -48,7 +48,9 @@ plt.legend(handles=[directCyclePatch, originalPatch, directMatchingPatch])
 (xmin, xmax, ymin, ymax) = 0, 100, 0, 1.1
 plt.axis((xmin, xmax, ymin, ymax))
 for i in range(len(directCycleResults)):
-	plt.annotate(str(k[i]), (directCycleX[i]+0.003*directCycleX[i],directCycleY[i]+0.01*directCycleY[i]))
+	plt.annotate(str(k[i]), (directCycleX[i]+0.003*directCycleX[i],directCycleY[i]+0.01*directCycleY[i]),color="red")
+for i in range(len(originalResults)):
+	plt.annotate(str(k[i]), (originalX[i]-0.088*originalX[i],originalY[i]-0.01*originalY[i]),color="blue")
 #plt.annotate(str(k[0]), (dix[0]+0.003*dix[0],diy[0]+0.03*diy[0]))
 plt.xlabel('precision(%)')
 plt.ylabel('recall(%)')
