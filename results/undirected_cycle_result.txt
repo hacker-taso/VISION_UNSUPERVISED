@@ -60,6 +60,3 @@ found matchings using cycles:72992
 correct matchings:27195
 precision:37.2575076721
 recall:0.544017616609
-
-k:11
-hog dimension:448
