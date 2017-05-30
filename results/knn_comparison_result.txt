@@ -1,0 +1,5 @@
+k:4
+hog dimension:448
+imgCnt:10000
+faiss time elapsed:6.30024981499
+sklearn:94.2447111607

@@ -1,0 +1,65 @@
+k:3
+hog dimension:448
+=============== Undirected Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:10244
+correct matchings:5144
+precision:50.2147598594
+recall:0.102902247466
+
+k:4
+hog dimension:448
+=============== Undirected Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:20431
+correct matchings:9321
+precision:45.6218491508
+recall:0.18646031272
+
+k:5
+hog dimension:448
+=============== Undirected Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:31833
+correct matchings:13579
+precision:42.6569911727
+recall:0.271638728293
+
+k:6
+hog dimension:448
+=============== Undirected Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:42963
+correct matchings:17481
+precision:40.6884994065
+recall:0.34969560419
+
+k:7
+hog dimension:448
+=============== Undirected Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:53489
+correct matchings:20927
+precision:39.1239320234
+recall:0.418630507916
+
+k:8
+hog dimension:448
+=============== Undirected Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:63508
+correct matchings:24129
+precision:37.9936385967
+recall:0.482684356358
+
+k:9
+hog dimension:448
+=============== Undirected Matching Cycle ===============
+allPositiveCnt:4998919
+found matchings using cycles:72992
+correct matchings:27195
+precision:37.2575076721
+recall:0.544017616609
+
+k:11
+hog dimension:448

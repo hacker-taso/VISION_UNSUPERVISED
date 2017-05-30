@@ -1,0 +1,14 @@
+k:4
+hog dimension:448
+total numPairs:595233
+numPairs:50000
+trueNegativeCnt:45308
+trueNegativeCnt/numPairs: 0.90616
+
+k:4
+hog dimension:448
+total numPairs:595233
+numPairs:595233
+trueNegativeCnt:534311
+trueNegativeCnt/numPairs: 0.8976501638854029
+recall: 
