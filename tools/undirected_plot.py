@@ -53,7 +53,7 @@ k3=[result['k'] for result in results]
 #plt.plot(directCycleX, directCycleY, 'r-', originalX, originalY, 'b-', dix, diy, 'g-')
 plt.plot(undirectedCycleX, undirectedCycleY, 'r-', originalX, originalY, 'b-')
 undirectedCyclePatch = mpatches.Patch(color='red', label='undirected knn')
-originalPatch = mpatches.Patch(color='blue', label='cycle')
+originalPatch = mpatches.Patch(color='blue', label='cycle(original)')
 #directMatchingPatch = mpatches.Patch(color='green', label='direct matching')
 #plt.legend(handles=[directCyclePatch, originalPatch, directMatchingPatch])
 plt.legend(handles=[undirectedCyclePatch, originalPatch])

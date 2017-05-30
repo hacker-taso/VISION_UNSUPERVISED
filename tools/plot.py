@@ -41,8 +41,8 @@ diy = [result['dCorrect']*100.0/allPositiveCnt for result in results]
 
 
 plt.plot(directCycleX, directCycleY, 'r-', originalX, originalY, 'b-', dix, diy, 'g-')
-directCyclePatch = mpatches.Patch(color='red', label='direct cycle')
-originalPatch = mpatches.Patch(color='blue', label='cycle')
+directCyclePatch = mpatches.Patch(color='red', label='50% cycle')
+originalPatch = mpatches.Patch(color='blue', label='cycle(original)')
 directMatchingPatch = mpatches.Patch(color='green', label='direct matching')
 plt.legend(handles=[directCyclePatch, originalPatch, directMatchingPatch])
 (xmin, xmax, ymin, ymax) = 0, 100, 0, 1.1
